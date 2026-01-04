@@ -31,11 +31,11 @@ Crucially, NutriTrack adheres to a strict **Data Sovereignty** philosophy. It op
 
 The latest stable compilation for supported platforms is available below.
 
-### Version 1.0.0 (Stable)
+### Version 1.0.0 (Initial Release)
 
 | Platform | Type | Download Link | Architecture |
 |----------|------|---------------|--------------|
-| **Android** | APK | [**Download NutriTrack_v1.0.0.apk**](https://github.com/yourusername/NutritionTracker/releases/latest) | Universal (ARM64/x86) |
+| **Android** | APK | [**Download NutriTrack_v1.0.0.apk**](https://github.com/AnirudhGirish/NutriTrack/releases/tag/v0.0.1) | Universal (ARM64/x86) |
 
 > **Requirement**: Android 9.0 (Pie) or higher / iOS 16.0 or higher.
 
@@ -157,7 +157,7 @@ interface Meal {
 
 ```bash
 # 1. Clone Repository
-git clone https://github.com/yourusername/NutritionTracker.git
+git clone https://github.com/AnirudhGirish/NutriTrack.git
 
 # 2. Install Dependencies
 npm install
@@ -210,9 +210,6 @@ eas build --platform ios --profile production
 
 Copyright © 2026 Anirudh Girish.
 
-This project is licensed under the **MIT License**.
-See the [LICENSE](LICENSE) file for the full text.
-
 ---
 
 <div align="center">
@@ -224,3 +221,4 @@ Built by **Anirudh Girish**
 
 anirudhgirish08@gmail.com
 </div>
+
