@@ -69,22 +69,22 @@ NutriTrack implements a **Client-Side Localized Persistence** model integrated w
 
 ```mermaid
 graph TD
-    User[User Interaction] --> UI[React Native UI Layer]
-    UI --> Logic[Business Logic & Custom Hooks]
+    User["User Interaction"] --> UI["React Native UI Layer"]
+    UI --> Logic["Business Logic & Custom Hooks"]
     
     subgraph "Local Persistence Layer"
-        Logic --> Storage[AsyncStorage (JSON Document Store)]
-        Logic --> Secure[SecureStore (AES-256 Encrypted Keys)]
+        Logic --> Storage["AsyncStorage (JSON Document Store)"]
+        Logic --> Secure["SecureStore (AES-256 Encrypted Keys)"]
     end
     
     subgraph "Cloud Inference Engine"
-        UI --> ImageProc[Image Compressor (JPEG Q=0.7)]
-        ImageProc --> Service[Gemini Service Repository]
-        Service -- TLS 1.3 / HTTPS --> API[Google Gemini API]
-        API -- JSON Payload --> Service
+        UI --> ImageProc["Image Compressor (JPEG Q=0.7)"]
+        ImageProc --> Service["Gemini Service Repository"]
+        Service -- "TLS 1.3 / HTTPS" --> API["Google Gemini API"]
+        API -- "JSON Payload" --> Service
     end
     
-    Service -- Parsed & Sanitized Data --> Logic
+    Service -- "Parsed & Sanitized Data" --> Logic
 ```
 
 ### Architectural Decisions
